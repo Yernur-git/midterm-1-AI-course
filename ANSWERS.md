@@ -9,7 +9,8 @@ Fingerprint: c318f7ae
 
 ## AI-use declaration
 
-(About half a page: which assistants or tools you used and for what. If you used none, say so.)
+i used chatgpt as a learning assistant during this midterm. it helped me understand the questions, the formulas, and how to calculate recall, Wilson intervals, annual costs, and the other numbers from my own data files. it also helped me make some of my written answers shorter and clearer
+
 
 ## Part 1: Retrieval and cost decision
 
