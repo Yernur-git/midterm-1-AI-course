@@ -54,12 +54,16 @@ i would test more questions in each language, especially in Kazakh. this can sho
 
 | pipeline | overall accuracy | weakest cell (language, condition) | accuracy there | lower | upper | annual cost |
 |---|---|---|---|---|---|---|
-| H | | | | | | |
-| L | | | | | | |
+| H | 0.894 | KK, degraded | 0.800 | 0.627 | 0.905 | 64547.51 |
+| L | 0.806 | KK, degraded | 0.533 | 0.361 | 0.698 | 21600.00 |
 
-Personal-data pages per year sent abroad under H:
+Personal-data pages per year sent abroad under H: 465375
 
 ### 2b. Memo (at most 300 words)
+
+i would choose pipeline L. H has better overall accuracy: 89.4%, while L has 80.6%. the weakest group for both is Kazakh degraded invoices. H gets 80.0% [62.7%, 90.5%], and L gets 53.3% [36.1%, 69.8%]. the intervals overlap, so this test does not clearly prove the difference
+H sends scans abroad. about 465,375 pages with names and IIN would leave Kazakhstan each year. i need to check where the vendor stores the scans, who can access them, and how long they keep them
+L runs on the bank's server in Kazakhstan and costs less: $21,600 instead of $64,547.51. i would use access control, encryption, audit logs, deletion rules, and block external transfers. the main risk is weak results on bad Kazakh scans, so they should be checked manually
 
 ## Part 3: Explain your own numbers
 
