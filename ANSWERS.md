@@ -70,24 +70,25 @@ L runs on the bank's server in Kazakhstan and costs less: $21,600 instead of $64
 ### Q1
 
 Number:
-Why (at most 40 words):
+Why (at most 40 words): the total token ratio is different because input and output tokens have different prices. output tokens cost more, so the number of output tokens affects the final bill more
 
 ### Q2
 
 Number:
-Why (at most 40 words):
+Why (at most 40 words): the sentence starts after the model limit of 512 e5 tokens. a question matching only this sentence cannot retrieve the chunk. the model truncates the end silently, so there is no visible error
 
 ### Q3
 
 Number:
-Why (at most 40 words):
+Why (at most 40 words): top-p removes low-probability tokens and then renormalises the rest. lowering temperature changes all probabilities but does not delete tokens from the distribution
+
 
 ### Q4
 
 Number:
-Why (at most 40 words):
+Why (at most 40 words): i left out arithmetic sequences and multiplication because they use rules, not facts from training. i used birthdays and account numbers. “never invent a fact” cannot add missing knowledge; it can only make the model refuse
 
 ### Q5
 
 Number:
-Why (at most 40 words):
+Why (at most 40 words): this model has 4.8 times more tokens per parameter than chinchilla, so it is over-trained by this rule. chinchilla said that models like gpt-3 were under-trained because they had too few training tokens
