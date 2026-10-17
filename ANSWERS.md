@@ -1,8 +1,8 @@
 # Midterm 1: answers
 
-GitHub username:
-Session code:
-Fingerprint:
+GitHub username: yernur-git
+Session code: maple-66
+Fingerprint: c318f7ae
 
 > Fill in the three lines above from `my_data/DATA.md`. Do not rename headings or table columns: a script reads the numbers.
 > Write only in the empty cells and lines. Percentages as 0.78 or 78 %, money as plain numbers.
@@ -17,34 +17,36 @@ Fingerprint:
 
 | config | recall@1 | recall@3 | recall@5 | MRR@10 |
 |---|---|---|---|---|
-| A | | | | |
-| B | | | | |
+| A | 0.667 | 0.733 | 0.800 | 0.713 |
+| B | 0.400 | 0.633 | 0.667 | 0.515 |
 
 ### 1b. Recall and 95 % Wilson interval of each candidate (recall at its own k)
 
 | candidate | recall@k | lower | upper |
 |---|---|---|---|
-| A, k=3 | | | |
-| A, k=5 | | | |
-| B, k=3 | | | |
-| B, k=5 | | | |
+| A, k=3 | 0.733 | 0.610 | 0.829 |
+| A, k=5 | 0.800 | 0.682 | 0.882 |
+| B, k=3 | 0.633 | 0.507 | 0.744 |
+| B, k=5 | 0.667 | 0.541 | 0.773 |
 
 ### 1c. Annual model cost in USD
 
 | candidate | annual cost |
 |---|---|
-| A, k=3 | |
-| A, k=5 | |
-| B, k=3 | |
-| B, k=5 | |
+| A, k=3 | 14600.06 |
+| A, k=5 | 19498.16 |
+| B, k=3 | 9386.01 |
+| B, k=5 | 10808.08 |
 
 ### 1d. Decision (at most 150 words)
 
-Chosen candidate:
+Chosen candidate: B, k=3B, k=3
 
-(Decision, using your intervals and the budget. Give the recall of your choice for EN, RU and KK separately.)
+i choose B, k=3. both A options are over the annual budget, so i cannot choose them. both B options are within the budget. B, k=3 costs less: $9,386.01 instead of $10,808.08 for B, k=5. the intervals of B, k=3 and B, k=5 overlap, so i cannot say that k=5 is clearly better. for B, k=3, recall@3 is 65% for EN, 75% for RU, and 50% for KK. kazakh users are served the worst, so this language needs more attention
 
 ### 1e. Next measurement (at most 60 words)
+
+i would test more questions in each language, especially in Kazakh. this can show more clearly if B, k=5 is really better than B, k=3 or if the difference happened by chance
 
 ## Part 2: A document pipeline you can defend
 
